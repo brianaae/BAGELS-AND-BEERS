@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&family=Quicksand:wght@300;400;600&family=Uchen&display=swap');
+
+:root {
+  --primary: #d4b5f9e3;
+  --secondary: #000000;
+  --accent: #2881ff;  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'lola' , sans-serif;
+  color: var(--accent);
+}
+
+.navigation-bar {
+  background-color: var(--secondary);
+  color: var(--accent);
+
+}
+
+.navigation-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.wrapper {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2em 1.5em;
+}
+
+
+.Beers {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: 100;
+  letter-spacing: .075rem;
+}
+
+.Beers span {
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.menu-toggle:hover {
+  cursor: pointer;
+  color: var(--accent);
+
+}
+
+
+.burger {
+  height: 1.5rem;
+  width: 1.5 rem;
+  
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+}
+
+.menu-item {
+  margin-top: 2rem;
+  
+}
+
+.hero {
+  background-color: var (--accent)
+  background-position: no-repeat;
+  background-size: 200;
+}
+
+,hero-left h1{
+  font-size: 10rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.hero-left p {
+  padding-top: 1rem;
+  font-size:1.5rem;
+  line-height: 2rem;
+  color: var(--secondary);
+  letter-spacing: 0rem;
+}
+
+.sub {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.sub h6 {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.sub h3 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.sub p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.cta {
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+  justify-content: center;
+  height: 48rem;
+
+  background-image: url(images/bar.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.cta {
+  font-size: 6rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-shadow: 1rem 0 1rem var(--primary);
+}
+
+.cta .cta-btn {
+  cursor: pointer;
+
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem 2rem;
+
+  font-size: 3rem;
+  color: var(--secondary);
+
+  background-color: var(--primary);
+  border-radius: 1rem;
+}
+
+.my-bagel {
+  width: 200px
+  height: 100opx;
+  background-image: url('image/bagel.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.Breakfast-Menu {
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+
+  background-image: url(images/bagel.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.Breakfast-Menu {
+  font-size: 6rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-shadow: 1rem 0 1rem var(--primary);
+}
+
+.Breakfast .Breakfast-btn {
+  cursor: pointer;
+
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem 2rem;
+
+  font-size: 3rem;
+  color: var(--accent);
+
+  background-color: var(--primary);
+  border-radius: 1rem
+
+.Dinner-Menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+
+  height: 50rem;
+
+  background-image: url('image/burger.jpeg');
+  background-size:100%
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.Dinner-Menu .Dinner {
+  font-size: 8rem;
+  font-weight: 500;
+  color: var:(--accent)
+  text-shadow: 1rem 0 1 rem var(--secondary);
+}
+
+.Beers {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+
+  height: 50rem;
+
+  background-image: url('images/beer2.jpeg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.Beers .Beers-Made {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-shadow: 1rem 0 1 rem var(--secondary);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    Width: 768px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+  .menu {
+    flex-direction:row;
+  }
+  .menu-item {
+    margin-top: 0;
+    margin-left: 2rem;
+  }
+.menu-toggle {
+  display: none;
+}
+}
+.float {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--secondary);
+
+  background-color: var(--accent);
+  border-radius: 40%;
+
+  transition: all 100ms ease-in-out;
+}
+
+.float:hover {
+  transform: scale(1.2);
+}
+
+.float-icon {
+  width: 3rem;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    width: 1280px;
+  }
+}
+
+.hero-left {
+  flex-basis: 60%
+}
+
+.hero-right {
+  flex-basis: 35%;
+}
+
+.hero-left h1 {
+  font-size: 6rem;
+}
+
+.sub p {
+  max-width: 50%;
+}
+
+.Breakfast .B-title{
+  flex: 0 0 40%;
+}
+
+.Dinner .D-title{
+  flex: 0 0 40%;
+}
+
+.Beers-Made .Beers {
+  width: 30%;
+}
